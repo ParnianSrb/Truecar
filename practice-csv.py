@@ -25,7 +25,6 @@ try:
                       'miles FLOAT NOT NULL,'
                       'city VARCHAR(50) NOT NULL,'
                       'price FLOAT NOT NULL)')'''
-
 # ----------------------------------------------------------------------------------------------------------------------
 
     response = requests.get('https://www.truecar.com/used-cars-for-sale/listings/?buyOnline=true')
