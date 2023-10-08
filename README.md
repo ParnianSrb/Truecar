@@ -1,6 +1,6 @@
-# A Project to fetch unrepeated data from a Website and save the desired parts in a Database, finally use this stored data for Machine Learning purposes.
-### Working with the cars being on sale online with various features from Truecar website: 
-### https://www.truecar.com/used-cars-for-sale/listings/?buyOnline=true
+## A Project to fetch unrepeated data from a Website and save the desired parts in a Database, finally use this stored data for Machine Learning purposes.
+#### Working with the cars being on sale online with various features from Truecar website: 
+#### https://www.truecar.com/used-cars-for-sale/listings/?buyOnline=true
 
 #### Due to learning and practicing objectives I have used two files for testing, namely "practice-csv.py" and "practice2.py", which may seem useless for readers.
 #### The "project_1.3.py" file does not include the Machine Learning part, whereas "project_2.0.py" file does include ML, and it is also the final version.
