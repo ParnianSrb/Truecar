@@ -24,7 +24,7 @@ try:
     '''my_cursor.execute('CREATE DATABASE IF NOT EXISTS truecar ')
     cnx.commit()'''
 
-    '''my_cursor.execute('CREATE TABLE IF NOT EXISTS cars (name VARCHAR(50) NOT NULL,'
+    '''my_cursor.execute('CREATE TABLE IF NOT EXISTS cars (name VARCHAR(100) NOT NULL,'
                       'model SMALLINT NOT NULL,'
                       'miles FLOAT NOT NULL,'
                       'city VARCHAR(50) NOT NULL,'

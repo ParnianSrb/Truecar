@@ -24,16 +24,16 @@ try:
     my_cursor = cnx.cursor(buffered=True)
 
     '''my_cursor.execute('CREATE DATABASE IF NOT EXISTS truecar ')
-    cnx.commit()'''
+    cnx.commit()
 
-    '''my_cursor.execute('CREATE TABLE IF NOT EXISTS cars (name VARCHAR(50) NOT NULL,'
+    my_cursor.execute('CREATE TABLE IF NOT EXISTS cars (name VARCHAR(100) NOT NULL,'
                       'model SMALLINT NOT NULL,'
                       'miles FLOAT NOT NULL,'
                       'city VARCHAR(50) NOT NULL,'
                       'price FLOAT NOT NULL,'
                       'UNIQUE (name, model, miles, city, price))')
-    cnx.commit()'''
-
+    cnx.commit()
+    '''
     # ------------------------------------------------------------------------------------------------------------------
 
     response = requests.get('https://www.truecar.com/used-cars-for-sale/listings/?buyOnline=true')
