@@ -52,7 +52,7 @@ try:
         mian_url = 'https://www.truecar.com/used-cars-for-sale/listings/?buyOnline=true'
         url = mian_url + f'&page={i}'
         response = requests.get(url)
-        print(f'------ THIS IS THE RESPONSE OF THE NEXT PAGE: {response} -------\n')
+        print(f'------ THIS IS THE RESPONSE OF PAGE NUMBER {i}: {response} -------\n')
         soup = BeautifulSoup(response.text, 'html.parser')
 
         # find all divisions with {'data-test': 'cardContent'} containing 1 Car card
@@ -142,7 +142,7 @@ def machine_learning(csv_file, data_string):
 statement = input('Do you want the Machine to guess any Price? Yes/No\n')
 if statement == 'Yes':
     new_data = input('Insert your dataset: (Name, Model, Miles, City)\n')
-    machine_learning('cars.csv', new_data)
+    machine_learning(cars, new_data)
 
 
 # ----------------------------------------------------------------------------------------------------------------------
