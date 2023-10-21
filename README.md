@@ -16,3 +16,6 @@ Code is written in Python using PyCharm, and in this Application there are vario
 #### Installation instructions:
 1. To use python I have tried coding with PyCharm which has been easy and straightforward. Here is the link to download and install: https://www.jetbrains.com/pycharm/download/?section=windows / https://www.jetbrains.com/help/pycharm/installation-guide.html#snap
 2. In order to use the libraries just import them as I did in the code.
+
+#### Errors and Problems:
+1. In the ML part, when I insert the entry data and Enter for the output, I guess there is a problem with how the data is saved in the csv file.
