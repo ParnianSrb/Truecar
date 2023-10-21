@@ -127,11 +127,10 @@ else:
 
 def machine_learning(csv_file, data_string):
     x, y = [], []
-    with open(csv_file, 'r') as f:
-        dataset = csv.reader(f)
-        for line in dataset:
-            x.append(line[:4])
-            y.append(line[4])
+    dataset = csv.reader(csv_file)
+    for line in dataset:
+        x.append(line[:4])
+        y.append(line[4])
     print(x[0], y[0])
     clf = tree.DecisionTreeClassifier()
     clf = clf.fit(x, y)
@@ -142,7 +141,12 @@ def machine_learning(csv_file, data_string):
 statement = input('Do you want the Machine to guess any Price? Yes/No\n')
 if statement == 'Yes':
     new_data = input('Insert your dataset: (Name, Model, Miles, City)\n')
-    machine_learning(cars, new_data)
+
+    file = open('cars' + '.csv', 'r')
+    machine_learning(file, new_data)
+    file.close()
+
+
 
 
 # ----------------------------------------------------------------------------------------------------------------------
